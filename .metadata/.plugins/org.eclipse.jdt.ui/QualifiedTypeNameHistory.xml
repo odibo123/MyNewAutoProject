@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="pages.RegisterPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
+<fullyQualifiedTypeName name="base.qa.com.TestBase"/>
+<fullyQualifiedTypeName name="pages.HomePage"/>
+<fullyQualifiedTypeName name="pages.DeleteSameItemProductListingPage"/>
+<fullyQualifiedTypeName name="pages.ProductListingPage"/>
+<fullyQualifiedTypeName name="pages.ProductPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="pages.ShoppingCartSummaryPage"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
+<fullyQualifiedTypeName name="pages.AddressPage"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="pages.ShippingPage"/>
+<fullyQualifiedTypeName name="pages.PaymentPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+</qualifiedTypeNameHistroy>

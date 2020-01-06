@@ -1,0 +1,39 @@
+
+
+
+Feature: Delete Same item from Cart Test
+
+  Scenario Outline: To test that user can login successfully if valid credentials are entered
+    Given I am  on the Home Page
+    And I see a logo banner
+    And I log into search page by entering desired "<clothing>"
+    Then I chooses an item displaying image and title and price
+    Then I logs into page showing product boldly displayed
+    Then I confirm details of product to be purchased
+    And I click on Add To Cart button
+    Then I confirm seeing a message saying product is successfully added to cart
+    Then I log into shopping cart summary page
+    And I clicks on the negative button under the quantity section
+    Then I  verify a message displaying shopping cart is empty
+
+    Examples: 
+      | clothing |
+      | women    |
+      | dresses  |
+      | T-Shirt  |
+
+
+#Senario: To check that a user should see a message displaying shopping cartb is empty when he does not choose an item
+
+#Scenario: To check that a user sees the exact quantity of product on the shopping cart before making purchase
+
+
+#
+#
+#Feature: Add item To Bag test
+#
+  #Scenario: T o test that user can add item to the cart
+    #Given I am logged in
+    #When I add an item to the cart
+    #And I click on the cart
+    #Then I should see the itemn I added

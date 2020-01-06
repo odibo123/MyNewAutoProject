@@ -1,0 +1,28 @@
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import base.qa.com.TestBase;
+
+public class AddressPage extends TestBase {
+	
+	//@FindBy(how=How.CSS,using = css=#address_delivery > .address_city)
+	//@FindBy(how=How.CSS,using = "#address_delivery > .address_city")
+	@FindBy(how=How.CSS,using = "#address_delivery")
+	WebElement DeliveryOrBillingAddressTxtField;
+	@FindBy(how=How.CSS,using = "#center_column > form > p > button > span")
+	WebElement AddressProccedToCheckoutBox;
+	
+
+
+	public String i_verify_DeliveryOrBillingAddress(){
+	return	DeliveryOrBillingAddressTxtField.getText();
+	}
+	
+	
+	public void click_AddressProccedToCheckoutBox(){
+		AddressProccedToCheckoutBox.click();
+	}
+}

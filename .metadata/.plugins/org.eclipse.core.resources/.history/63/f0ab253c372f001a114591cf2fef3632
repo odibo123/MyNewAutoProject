@@ -1,0 +1,23 @@
+package stepDefinitionTest;
+
+import org.openqa.selenium.support.PageFactory;
+
+import base.qa.com.TestBase;
+import cucumber.api.java.en.Then;
+import pages.AddressPage;
+
+public class MyAddressTest extends TestBase{
+	
+	AddressPage addressPage = new AddressPage();
+	@Then("^I choose use the delivery address as my billing address$")
+	public void i_choose_use_the_delivery_address_as_my_billing_address() throws Throwable {
+		AddressPage addressPage = PageFactory.initElements(driver, AddressPage .class);
+		 addressPage .select_addressDropdown();
+	}
+
+	@Then("^I attempt to add a new address$")
+	public void i_attempt_to_add_a_new_address() throws Throwable {
+		AddressPage addressPage = PageFactory.initElements(driver, AddressPage .class);
+		addressPage.click_AddNewAddressArrow();
+	}
+}

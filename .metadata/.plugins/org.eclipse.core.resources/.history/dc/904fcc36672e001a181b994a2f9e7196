@@ -1,0 +1,7 @@
+package stepDefinitionTest;
+
+import base.qa.com.TestBase;
+
+public class EndToEndTest extends TestBase{
+
+}

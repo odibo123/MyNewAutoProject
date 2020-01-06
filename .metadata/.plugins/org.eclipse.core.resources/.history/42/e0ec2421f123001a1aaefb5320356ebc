@@ -1,0 +1,72 @@
+package stepDefinitionTest;
+
+import org.openqa.selenium.support.PageFactory;
+
+import base.qa.com.TestBase;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import pages.HomePage;
+import pages.RegisterPage;
+
+public class RegisterTest extends TestBase{
+    
+	HomePage homePage= new HomePage();
+	RegisterPage registerPage = new RegisterPage ();
+@Then("^I types \"([^\"]*)\" into additional information box$")
+public void i_types_into_additional_information_box(String emailid) throws Throwable {
+	
+}
+
+
+@Given("^I log into create an account Page$")
+public void i_log_into_create_an_account_Page() throws Throwable {
+	HomePage homePage =PageFactory.initElements(driver, HomePage .class);
+	homePage.I_click_signInLink();
+}
+
+@When("^I attempt to create  a personal  account by entering  \"([^\"]*)\" that is already in use$")
+public void i_attempt_to_create_a_personal_account_by_entering_that_is_already_in_use(String emailid) throws Throwable {
+	RegisterPage registerPage = PageFactory.initElements(driver,RegisterPage.class);
+	registerPage .enter_emailid(emailid); 
+	registerPage .click_create_an_account_Btn();
+}
+@Then("^error message should be displayed$")
+public void error_message_should_be_displayed() throws Throwable {
+	RegisterPage registerPage = PageFactory.initElements(driver,RegisterPage.class);
+String errorMessage=	registerPage.verify_Error_Message();
+System.out.println(errorMessage);
+}
+
+@Given("^I log into create  account page using email that is not in use$")
+public void i_log_into_create_account_page_using_email_that_is_not_in_use() throws Throwable {
+	RegisterPage registerPage = PageFactory.initElements(driver,RegisterPage.class);
+	registerPage.i_type_email_not_in_use();
+}
+
+@Then("^I log into personal account Page$")
+public void i_log_into_personal_account_Page() throws Throwable {
+    
+}
+@When("^I fills in personal information by choosing title and  entering \"([^\"]*)\" and \"([^\"]*)\" email and \"([^\"]*)\" and date of birth$")
+public void i_fills_in_personal_information_by_choosing_title_and_entering_and_email_and_and_date_of_birth(String arg1, String arg2, String arg3) throws Throwable {
+  
+}
+
+@When("^I fills in address section by filling \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+public void i_fills_in_address_section_by_filling_and_and_and_and(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
+    
+}
+
+@When("^I also chooses state and country$")
+public void i_also_chooses_state_and_country() throws Throwable {
+   
+}
+
+@Then("^I confirms account was registered successfully$")
+public void i_confirms_account_was_registered_successfully() throws Throwable {
+  
+}
+
+
+}

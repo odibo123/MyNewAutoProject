@@ -1,0 +1,13 @@
+package pages;
+
+import base.qa.com.TestBase;
+
+public class PaymentPage extends TestBase{
+	
+public String verify_Payment_Page_Title(){
+		
+		return driver.getTitle();	
+		
+	}
+
+}
